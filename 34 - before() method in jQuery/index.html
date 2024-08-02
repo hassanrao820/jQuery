@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#before').click(function(){
+                $('h2').before('<h1>Before()</h1>');
+            });
+        });
+    </script>
+    <style>
+        #before{
+            background-color: black;
+            color: aliceblue;
+            padding: .5em 1.5em;
+            margin-top: 1em;
+            border: none;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Method</h2>
+    <p>
+        we can add a text before heading "Method" by clicking the Before button.
+    </p>
+    <button id="before">before</button>
+    
+</body>
+</html>

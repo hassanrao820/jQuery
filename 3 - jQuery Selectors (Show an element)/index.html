@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.show').click(function(){
+                $('p').show();
+            });
+            $('.hide').click(function(){
+                $('p').hide();
+            });
+        });
+    </script>
+    <title>jQuery Selectors</title>
+    <style>
+        .show{
+            background-color: green;
+            padding: .7em 1.5em;
+            border: none;
+            border-radius: 2em;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        .hide{
+            background-color: red;
+            padding: .7em 1.5em;
+            border: none;
+            border-radius: 2em;
+            color: aliceblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Show & Hide an Element</h1>
+    <button class="show">Show Text</button>
+    <button class="hide">Hide Text</button>
+    <p>After Click Hide and Show Button, i will hide & show</p>
+</body>
+</html>

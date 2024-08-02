@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siblings()</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('p').siblings().css({'color': 'red', 'border': '.2em dotted black', 'border-radius': '1em'})
+        });
+    </script>
+    <style>
+        .siblings *{
+            display: block;
+            border: .2em solid brown;
+            padding: 1em;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h2>Siblings</h2>
+    <div class="siblings">
+        <div style="width: 700px;"> div (parent)
+            <h1>h1</h1>
+            <p>p</p>
+            <h2>h2</h2>
+            <ol> ol
+                <li>li</li>
+                <li>li</li>
+            </ol>
+        </div>
+    </div>
+    
+</body>
+</html>

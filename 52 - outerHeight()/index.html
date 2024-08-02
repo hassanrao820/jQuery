@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outerHeight() method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                let hei = '';
+                hei += 'outerHeight = ' + $('.div').outerHeight();
+                $('.div').html(hei);
+            });
+        });
+    </script>
+    <style>
+        .div{
+            width: 150px;
+            background-color: black;
+            color: aliceblue;
+            border: none;
+            border-radius: 1em;
+            height: 100px;
+            padding: 1em;
+            border: 2px solid teal;
+        }
+        .btn{
+            cursor: pointer;
+            background-color: black;
+            color: aliceblue;
+            border: none;
+            border-radius: 2em;
+            padding: .5em 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>outerHeight() method</h2>
+    <b>Get the outerHeight()</b>
+    <div class="div"></div>
+    <p>
+        Click the below button to get the outerHeight() of the div.
+    </p>
+    <button class="btn">Get outerHeight()</button>
+    
+</body>
+</html>

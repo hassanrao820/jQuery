@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET the text of the Selected Element</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('p').text('On click the button "SET the text", new text will be visible to everyOne.');
+            });
+            $('#btn2').click(function(){
+                $('p').html('On click the button <h3>"SET the HTML"</h3> new text will be <b>visible</b> to everyOne. In which we can paste the custom part of the HTML code into it, and design it accordingly.');
+            });
+        });
+    </script>
+    <style>
+        #btn1 , #btn2{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 8px 0;
+            cursor: pointer;
+            border-radius: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Set the text of the Selected Element</h2>
+    <p>Click the below buttons to set the text and html.</p>
+    <button id="btn1">SET the Text</button>
+    <button id="btn2">SET the HTML</button>
+</body>
+</html>

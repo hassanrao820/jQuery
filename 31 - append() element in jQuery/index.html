@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD Element</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#append').click(function(){
+                $('h3').append('<i> append():</i>');
+            });
+        });
+    </script>
+    <style>
+        #append{
+            background-color: black;
+            color: aliceblue;
+            padding: .5em 1.5em;
+            margin-top: 1em;
+            border: none;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Append() Element</h2>
+    <p>
+        we can append an element by clicking the append button
+    </p>
+    <h3>we are studying</h3>
+    <button id="append">Append</button>
+    
+</body>
+</html>

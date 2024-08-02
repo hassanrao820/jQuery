@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        //* Fade In 
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $('#div1').fadeIn();
+                $('#div2').fadeIn('slow');
+                $('#div3').fadeIn('fast');
+                $('#div4').fadeIn(5000);
+            });
+        //* Fade Out
+                $('#btn').click(function(){
+                    $('#div5').fadeOut();
+                    $('#div6').fadeOut('slow');
+                    $('#div7').fadeOut('fast');
+                    $('#div8').fadeOut(5000);
+                });
+        //* Toggle
+        $('.bttn').click(function(){
+                    $('#div9').fadeToggle();
+                    $('#div10').fadeToggle('slow');
+                    $('#div11').fadeToggle('fast');
+                    $('#div12').fadeToggle(5000);
+                });        
+        });
+    </script>
+    <title>Fade an Element</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fade in Effect in jQuery</h1>
+    <button class="btn">Fade In</button>
+        <div>
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            <div id="div4"></div>
+        </div>
+    <h1>Fade Out Effect in jQuery</h1>    
+    <button id="btn">Fade Out</button>
+        <div>
+            <div id="div5"></div>
+            <div id="div6"></div>
+            <div id="div7"></div>
+            <div id="div8"></div>
+        </div>
+        
+    <h1>Four Div Show/Hide on button Toggle</h1>
+    <button class="bttn">Fade In/Out & Show/Hide Element</button>
+        <div>
+            <div id="div9">Div 9</div>
+            <div id="div10">Div 10</div>
+            <div id="div11">Div 11</div>
+            <div id="div12">Div 12</div>
+        </div>    
+</body>
+</html>

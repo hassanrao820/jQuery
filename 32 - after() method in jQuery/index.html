@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Element</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#after').click(function(){
+                $('p').after('<h3>We are studying after() method.</h3>');
+            });
+        });
+    </script>
+    <style>
+        #after{
+            background-color: black;
+            color: aliceblue;
+            padding: .5em 1.5em;
+            margin-top: 1em;
+            border: none;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>After() Method</h2>
+    <p>
+        we can add another tag after paragraph by clicking the after button.
+    </p>
+    <button id="after">After</button>
+    
+</body>
+</html>

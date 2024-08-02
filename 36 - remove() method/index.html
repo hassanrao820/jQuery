@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove() Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#remove1').click(function(){
+                $('#p1').remove(); 
+            });
+            $('#remove2').click(function(){
+                $('#p2').remove(); 
+            });
+        });
+    </script>
+    <style>
+        #remove1, #remove2{
+            background-color: red;
+            color: aliceblue;
+            padding: .7em 1.5em;
+            border: none;
+            cursor: pointer;
+            border-radius: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h2>remove() method</h2>
+    <p id="p1">
+       <b>Line 1:-</b>👉 we will remove this line
+    </p>
+    <p id="p2">
+       <b>Line 2:-</b>👉 we will remove this line as well, ny clicking the below button.
+    </p>
+    <button id="remove1">Remove Line 1</button>
+    <button id="remove2">Remove Line 2</button>
+    
+</body>
+</html>

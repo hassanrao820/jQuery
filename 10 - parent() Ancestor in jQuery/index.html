@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent() Ancestor in jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('span').parent().css({'background': 'black', 'color': 'white', 'border': '.3em solid blue'});
+        });
+    </script>
+    <style>
+        .ancestor *{
+            display: block;
+            padding: 1em;
+            margin: 1em;
+            border: .3em solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>parent()</h2>
+    <div class="ancestor">
+        <div style="width: 500px;"> div (great grandParent)
+            <ul> ul (grandParent)
+                <li> li (Parent)
+                    <span>span</span>
+                    <span>span</span>
+                </li>
+                <li>li</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set CSS properties</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.set').click(function(){
+                $('p').css({'background-color':'black','color':'white','padding':'1em', 'width': '150px', 'border-radius': '1em', 'height': '200px', 'font-size': '1.5em', 'line-height': '1.5em'});
+            });
+        });
+    </script>
+    <style>
+        .set{
+            background-color: black;
+            color: aliceblue;
+            padding: .5em 1em;
+            border: none;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>SET CSS properties</h2>
+    <p>We can set the properties of an element using the jQuery.</p>
+    <button class="set">SET</button>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width() / height() Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.get-width_height').click(function(){
+                var wid = '';
+                wid += 'width = ' + $('.div-w').width();
+                $('.div-w').html(wid);
+            });
+            $('.get-width_height').click(function(){
+                var height = '';
+                height += 'height = ' + $('.div-h').height();
+                $('.div-h').html(height);
+            });
+        });
+    </script>
+    <style>
+        .div-w{
+            width: 100px;
+            height: 100px;
+            border-radius: 1em;
+            border: 2px solid black;
+            margin: 1em 0;
+            padding: 1em;
+        }
+        .div-h{
+            width: 100px;
+            height: 50px;
+            border-radius: 1em;
+            border: 2px solid black;
+            margin: 1em 0;
+            padding: 1em;
+        }
+        .get-width_height{
+            background-color: black;
+            color: azure;
+            border-radius: 2em;
+            padding: .5em 1.5em;
+            border: 2px solid red;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>width() / height() method</h2>
+    <p>the <b>width()</b> method in jQuery is used to get or set the width of an element</p>
+    <p>it excludes padding, border and margin.</p>
+    <div class="div-w"></div>
+    <div class="div-h"></div>
+    <strong>Click the below button to get the width/height of the above div.</strong>
+    <br>
+    <button class="get-width_height">Get</button>
+    
+</body>
+</html>

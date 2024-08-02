@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle css class</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $('p').toggleClass('para');
+            });
+        });
+    </script>
+    <style>
+        .para{
+            width: 100px;
+            height: 150px;
+            overflow: hidden;
+            padding: .2em .5em;
+            border-radius: 1em;
+            border: 2px solid black;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Toggle css class</h2>
+    <h3>we can add the class</h3>
+    <p>we can add styling by using toggle class</p>
+    <p>without mention any class in paragraph tag, we can add style using toggle class in jQuery.</p>
+    <h3>we can also remove the class</h3>
+    <p>using toggle class we can add/remove the class</p>
+    <button class="btn">ADD/Remove</button>
+    
+</body>
+</html>

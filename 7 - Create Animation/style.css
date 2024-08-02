@@ -1,0 +1,19 @@
+#animate{
+    background-color: red;
+    color: aliceblue;
+    padding: .7em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 2em;
+}
+#div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
+    padding: .7em 1em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    border-radius: 1em;
+    position: absolute;
+}

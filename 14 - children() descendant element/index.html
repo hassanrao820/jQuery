@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Element</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('ul').children().css({'color': 'sky', 'font-size': '1.5em', 'border': '.2em solid red'})
+        });
+    </script>
+    <style>
+        .descendant *{
+            display: block;
+            border: .2em dotted black;
+            font-size: 20px;
+            padding: 1em;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Descendant in jQuery</h2>
+    <div class="descendant">
+        <div style="width: 700px;"> div (greatGrandParent)
+            <ul> ul (grandParent)
+                <li> li (parent)
+                    <span>span</span>
+                    <span>span</span>
+                </li>
+                <li>li</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

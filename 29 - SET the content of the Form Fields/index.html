@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get text of the selected element</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#set-name').click(function(event){
+                event.preventDefault(); // Prevent form submission
+                $('#name').val('Hassan'); // Set value and focus on input
+            });
+            $('#set-dept').click(function(event){
+                event.preventDefault(); // Prevent form submission
+                $('#dept').val('IT'); // Set value and focus on input
+            });
+            $('#set-zone').click(function(event){
+                event.preventDefault(); // Prevent form submission
+                $('#zone').val('Punjab'); // Set value and focus on input
+            });
+        });
+    </script>
+</head>
+<body>
+    <form class="employee-form">
+        <h4>Get text of the selected element in Employee Form</h4>
+        <label>Enter your name: <input type="text" id="name" value=""></label>
+        <label>Enter your department: <input type="text" id="dept" value=""></label>
+        <label>Enter your zone: <input type="text" id="zone" value=""></label>
+        <button id="set-name">SET name</button>
+        <button id="set-dept">SET dept</button>
+        <button id="set-zone">SET zone</button>
+    </form>
+    
+</body>
+</html>

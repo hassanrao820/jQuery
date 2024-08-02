@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a multiple Classes to different elements</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.add-classes').click(function(){
+                $('h2, p').addClass('active demo');
+            });
+        });
+    </script>
+    <style>
+        .add-classes{
+            background-color: beige;
+            color: black;
+            padding: .5em 1em;
+            border: none;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+        .active{
+            width: 100px;
+            height: 100px;
+            padding: 2em;
+            background-color: aqua;
+            transition: 1s;
+            border-radius: 1em;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        .demo{
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add a multiple Class to different elements.</h2>
+    <p>we can add a multiple class to different element</p>
+    <button class="add-classes">ADD</button>
+</body>
+</html>

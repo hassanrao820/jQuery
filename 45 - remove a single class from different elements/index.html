@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>remove a single Class from different elements</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.btn').click(function() {
+                    $('.para, .par').removeClass();
+                });
+            });
+        </script>
+        <style>
+            .para{
+                width: 100px;
+                height: 100px;
+                line-height: 1.5em;
+                border: 1px solid red;
+                padding:    .2em .5em;
+                border-radius: 1em;
+                overflow: hidden;
+            }
+            .par{
+                overflow: hidden;   
+                width: 100px;
+                height: 100px;
+                line-height: 1.5em;
+                border: 2px solid rgb(192, 237, 118);
+                padding: .2em .5em;
+                border-radius: 1em;
+                background-color: black;
+                color: aliceblue;
+            }
+            .btn{
+                background-color: black;
+                color: azure;
+                border-radius: 2em;
+                border: none;
+                padding: .5em 1em;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>remove a single Class from different elements.</h2>
+        <p class="para">we can remove class from the different elements using jQuery</p>
+        <p class="par">The style of this paragraph is removed by clicking the remove button.</p>
+        <p>
+            by click the remove 👉button we can remove the class from the element
+        </p>
+        <button class="btn">remove</button>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>remove a single Class</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.btn').click(function() {
+                    $('.para').removeClass();
+                });
+            });
+        </script>
+        <style>
+            .para{
+                width: 100px;
+                height: 100px;
+                line-height: 1.5em;
+                border: 1px solid red;
+                padding:    .2em .5em;
+                border-radius: 1em;
+            }
+            .btn{
+                background-color: black;
+                color: azure;
+                border-radius: 2em;
+                border: none;
+                padding: .5em 1em;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>remove a single Class</h2>
+        <p class="para">we can remove class from the elements using jQuery</p>
+        <p>
+            by click the remove 👉button we can remove the class from the element
+        </p>
+        <button class="btn">remove</button>
+    </body>
+</html>

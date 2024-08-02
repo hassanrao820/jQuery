@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get text of the selected element</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#get-name').click(function(){
+                alert($('#name').val());
+            });
+            $('#get-dept').click(function(){
+                alert($('#dept').val());
+            });
+            $('#get-zone').click(function(){
+                alert($('#zone').val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <form class="employee-form">
+        <h4>Get text of the selected element in Employee Form</h4>
+        <label for="employee">Enter your name: <input type="text" id="name"></label>
+        <label for="employee">Enter your department: <input type="text" id="dept"></label>
+        <label for="employee">Enter your zone: <input type="text" id="zone"></label>
+        <button id="get-name">Get name</button>
+        <button id="get-dept">Get dept</button>
+        <button id="get-zone">Get zone</button>
+    </form>
+    
+</body>
+</html>

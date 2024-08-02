@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fade an Element</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //* Slide Down an Element
+                $('.btn').click(function(){
+                    $('#para').slideDown(3000);
+                });
+            //* Slide Up an Element
+            $('#btn').click(function(){
+                $('.para').slideUp(3000);
+            });
+            // * Slide Toggle an Element
+            $('#bttn').click(function(){
+                $('.parr').slideToggle(3000);
+            });
+            });
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Click the button to slide down an element.</h2>
+        <button class="btn">Slide Down</button>   
+        <p id="para">
+            //* Slide Down an Element
+                $('.btn').click(function(){
+                    $('#para').slideDown(3000);
+                });
+        </p>
+        <h2>Click the button to slide down an element.</h2>
+        <button id="btn">Slide Up</button>   
+        <p class="para">
+            //* Slide Down an Element
+                $('.btn').click(function(){
+                    $('#para').slideDown(3000);
+                });
+        </p>
+        <h2>Click the button to slide Up/down an element.</h2>
+        <button id="bttn">Slide UP/Down</button>   
+        <p class="parr">
+            //* Slide Down an Element
+                $('.btn').click(function(){
+                    $('#para').slideDown(3000);
+                });
+        </p>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#animate').click(function(){
+                $('#div').animate({
+                    left: '300px',
+                    fontSize: '2em',
+                    fontWeight: 600,
+                    width: '200px',
+                    height: '200px'
+                });
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Create Animation</title>
+</head>
+<body>
+    <h2>Animate a whole Div</h2>
+    <button id="animate">Animate</button>
+    <div id="div">
+        Click the animate Button to see a Magic
+    </div>
+</body>
+</html>

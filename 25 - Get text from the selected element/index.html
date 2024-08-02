@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get text of the selected element</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#text').click(function(){
+                alert($('#demo').text()).css({'display': 'block'});
+            });
+            $('#html').click(function(){
+                alert($('body').html());
+            });
+        });
+    </script>
+    <style>
+        #text{
+            background-color: rgb(14, 6, 178);
+            color: aliceblue;
+            padding: .7em 1.5em;
+            border: none;
+            cursor: pointer;
+            border-radius: 2em;
+        }
+
+        #html{
+            background-color: rgb(178, 6, 6);
+            color: aliceblue;
+            padding: .7em 1.5em;
+            border: none;
+            cursor: pointer;
+            border-radius: 2em;
+        }
+    </style>
+</head>
+<body>
+        <h2>Get text of the selected element</h2>
+        <p>Click the <b>button</b> to get the <b>text</b> of the selected element</p>
+        <h5 id="demo" style="display: none;">Hey, I am the text of the selected element😘</h5>
+
+    <button id="text">Get text</button>
+    <button id="html">Get html</button>
+    
+</body>
+</html>

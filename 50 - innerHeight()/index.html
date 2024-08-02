@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHeight() method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                let hei = '';
+                hei += 'innerHeight = ' + $('.div').innerHeight();
+                $('.div').html(hei);
+            });
+        });
+    </script>
+    <style>
+        .div{
+            width: 150px;
+            background-color: black;
+            color: aliceblue;
+            border: none;
+            border-radius: 1em;
+            height: 100px;
+            padding: 1em;
+        }
+        .btn{
+            cursor: pointer;
+            background-color: black;
+            color: aliceblue;
+            border: none;
+            border-radius: 2em;
+            padding: .5em 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>innerHeight() method</h2>
+    <b>Get the inner Height</b>
+    <div class="div"></div>
+    <p>
+        Click the below button to get the inner Height of the div.
+    </p>
+    <button class="btn">Get inner Height</button>
+    
+</body>
+</html>

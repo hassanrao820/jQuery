@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Single Class</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.add-class').click(function(){
+                $('p').addClass('active');
+            });
+        });
+    </script>
+    <style>
+        .add-class{
+            background-color: beige;
+            color: black;
+            padding: .5em 1em;
+            border: none;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+        .active{
+            width: 100px;
+            height: 100px;
+            padding: 2em;
+            background-color: aqua;
+            transition: 1s;
+            border-radius: 1em;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add a Single Class</h2>
+    <p>we can add a classes to an element</p>
+    <button class="add-class">ADD Class</button>
+</body>
+</html>

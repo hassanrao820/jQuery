@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty() Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#empty1').click(function(){
+                $('#p1').empty(); 
+            });
+            $('#empty2').click(function(){
+                $('#p2').empty(); 
+            });
+        });
+    </script>
+    <style>
+        #empty1, #empty2{
+            background-color: red;
+            color: aliceblue;
+            padding: .7em 1.5em;
+            border: none;
+            cursor: pointer;
+            border-radius: 2em;
+        }
+        #p1, #p2{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            padding: 1em 1.5em;
+            color: aliceblue;
+            border: none;
+            border-radius: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Empty() method</h2>
+    <p id="p1">
+       <b>Line 1:-</b>👉 we will empty this paragraph
+    </p>
+    <p id="p2">
+       <b>Line 2:-</b>👉 we will empty this para as well, ny clicking the below Empty buttons.
+    </p>
+    <button id="empty1">Empty Line 1</button>
+    <button id="empty2">Empty Line 2</button>
+    
+</body>
+</html>

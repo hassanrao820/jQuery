@@ -1,0 +1,35 @@
+.btn, #btn, #bttn{
+    background-color: aqua;
+    padding: .7em 1.5em;
+    border: none;
+    border-radius: 2em;
+    color: red;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    cursor: pointer;
+}
+#para{
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    padding-top: 2em;
+    display: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+.para, .parr{
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    padding-top: 2em;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 2em;
+}
